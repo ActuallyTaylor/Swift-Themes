@@ -1,6 +1,6 @@
-import SwiftThemes
 import Runestone
 import UIKit
+import SwiftUI
 
 public enum EditorTheme: Int, CaseIterable, Identifiable, Comparable {
     public var id: Int {
@@ -39,6 +39,30 @@ public enum EditorTheme: Int, CaseIterable, Identifiable, Comparable {
             return .solarizedDark.background
         }
     }
+    
+    public var foregroundColor: UIColor {
+        switch self {
+        case .tomorrow:
+            return .tomorrow.foreground
+        case .gruvboxLight:
+            return .gruvboxLight.fg
+        case .gruvboxDark:
+            return .gruvboxDark.fg
+        case .catppuccinLatte:
+            return .catppuccinLatte.text
+        case .catppuccinFrappe:
+            return .catppuccinFrappe.text
+        case .catppuccinMacchiato:
+            return .catppuccinMacchiato.text
+        case .catppuccinMocha:
+            return .catppuccinMocha.text
+        case .solarizedLight:
+            return .solarizedLight.foreground
+        case .solarizedDark:
+            return .solarizedDark.foreground
+        }
+    }
+
     
     public var runestoneTheme: Theme {
         switch self {
@@ -84,6 +108,56 @@ public enum EditorTheme: Int, CaseIterable, Identifiable, Comparable {
         case .solarizedDark:
             return "Solarized Dark"
         }
+    }
+    
+    public var isDarkTheme: Bool {
+        switch self {
+        case .tomorrow:
+            return false
+        case .gruvboxLight:
+            return false
+        case .gruvboxDark:
+            return true
+        case .catppuccinLatte:
+            return false
+        case .catppuccinFrappe:
+            return true
+        case .catppuccinMacchiato:
+            return true
+        case .catppuccinMocha:
+            return true
+        case .solarizedLight:
+            return false
+        case .solarizedDark:
+            return true
+        }
+    }
+    
+    public var tintColor: UIColor {
+        switch self {
+        case .tomorrow:
+            return .tomorrow.red
+        case .gruvboxLight:
+            return .gruvboxLight.bg3
+        case .gruvboxDark:
+            return .gruvboxDark.bg3
+        case .catppuccinLatte:
+            return .catppuccinLatte.rosewater
+        case .catppuccinFrappe:
+            return .catppuccinFrappe.rosewater
+        case .catppuccinMacchiato:
+            return .catppuccinMacchiato.rosewater
+        case .catppuccinMocha:
+            return .catppuccinMocha.rosewater
+        case .solarizedLight:
+            return .solarizedLight.comment
+        case .solarizedDark:
+            return .solarizedDark.comment
+        }
+    }
+    
+    public var colorScheme: ColorScheme {
+        isDarkTheme ? .dark : .light
     }
     
     public static func < (lhs: EditorTheme, rhs: EditorTheme) -> Bool {
