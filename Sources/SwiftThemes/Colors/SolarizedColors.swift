@@ -21,16 +21,16 @@
  */
 import UIKit
 
-extension UIColor {
+public extension UIColor {
     struct Solarized {
-        enum Style {
+        public enum Style {
             case light
             case dark
         }
         
-        var style: Style
+        public var style: Style
         
-        var foreground: UIColor {
+        public var foreground: UIColor {
             switch style {
             case .light:
                 return UIColor(hex: "657b83")
@@ -39,7 +39,7 @@ extension UIColor {
             }
         }
         
-        var emphasis: UIColor {
+        public var emphasis: UIColor {
             switch style {
             case .light:
                 return UIColor(hex: "586e75")
@@ -48,7 +48,7 @@ extension UIColor {
             }
         }
         
-        var comment: UIColor {
+        public var comment: UIColor {
             switch style {
             case .light:
                 return UIColor(hex: "93a1a1")
@@ -57,7 +57,7 @@ extension UIColor {
             }
         }
 
-        var backgroundHighlights: UIColor {
+        public var backgroundHighlights: UIColor {
             switch style {
             case .light:
                 return UIColor(hex: "eee8d5")
@@ -66,7 +66,7 @@ extension UIColor {
             }
         }
 
-        var background: UIColor {
+        public var background: UIColor {
             switch style {
             case .light:
                 return UIColor(hex: "fdf6e3")
@@ -75,28 +75,28 @@ extension UIColor {
             }
         }
 
-        var yellow: UIColor {
+        public var yellow: UIColor {
             return UIColor(hex: "b58900")
         }
-        var orange: UIColor {
+        public var orange: UIColor {
             return UIColor(hex: "cb4b16")
         }
-        var red: UIColor {
+        public var red: UIColor {
             return UIColor(hex: "dc322f")
         }
-        var magenta: UIColor {
+        public var magenta: UIColor {
             return UIColor(hex: "d33682")
         }
-        var violet: UIColor {
+        public var violet: UIColor {
             return UIColor(hex: "6c71c4")
         }
-        var blue: UIColor {
+        public var blue: UIColor {
             return UIColor(hex: "268bd2")
         }
-        var cyan: UIColor {
+        public var cyan: UIColor {
             return UIColor(hex: "2aa198")
         }
-        var green: UIColor {
+        public var green: UIColor {
             return UIColor(hex: "859900")
         }
         

@@ -2,18 +2,18 @@
 
 import UIKit
 
-extension UIColor {
+public extension UIColor {
     struct Catppuccin {
-        enum Style {
+        public enum Style {
             case latte
             case frappe
             case macchiato
             case mocha
         }
         
-        var style: Style
+        public var style: Style
         
-        var rosewater: UIColor {
+        public var rosewater: UIColor {
             switch style {
             case .latte:
                 return UIColor(red: 220, green: 138, blue: 120, alpha: 1)
@@ -25,7 +25,7 @@ extension UIColor {
                 return UIColor(red: 245, green: 224, blue: 220, alpha: 1)
             }
         }
-        var flamingo: UIColor {
+        public var flamingo: UIColor {
             switch style {
             case .latte:
                 return UIColor(red: 221, green: 120, blue: 120, alpha: 1)
@@ -37,7 +37,7 @@ extension UIColor {
                 return UIColor(red: 242, green: 205, blue: 205, alpha: 1)
             }
         }
-        var pink: UIColor {
+        public var pink: UIColor {
             switch style {
             case .latte:
                 return UIColor(red: 234, green: 118, blue: 203, alpha: 1)
@@ -49,7 +49,7 @@ extension UIColor {
                 return UIColor(red: 245, green: 194, blue: 231, alpha: 1)
             }
         }
-        var mauve: UIColor {
+        public var mauve: UIColor {
             switch style {
             case .latte:
                 return UIColor(red: 136, green: 57, blue: 239, alpha: 1)
@@ -61,7 +61,7 @@ extension UIColor {
                 return UIColor(red: 203, green: 166, blue: 247, alpha: 1)
             }
         }
-        var red: UIColor {
+        public var red: UIColor {
             switch style {
             case .latte:
                 return UIColor(red: 210, green: 15, blue: 57, alpha: 1)
@@ -73,7 +73,7 @@ extension UIColor {
                 return UIColor(red: 243, green: 139, blue: 168, alpha: 1)
             }
         }
-        var maroon: UIColor {
+        public var maroon: UIColor {
             switch style {
             case .latte:
                 return UIColor(red: 230, green: 69, blue: 83, alpha: 1)
@@ -85,7 +85,7 @@ extension UIColor {
                 return UIColor(red: 235, green: 160, blue: 172, alpha: 1)
             }
         }
-        var peach: UIColor {
+        public var peach: UIColor {
             switch style {
             case .latte:
                 return UIColor(red: 254, green: 100, blue: 11, alpha: 1)
@@ -97,7 +97,7 @@ extension UIColor {
                 return UIColor(red: 250, green: 179, blue: 135, alpha: 1)
             }
         }
-        var yellow: UIColor {
+        public var yellow: UIColor {
             switch style {
             case .latte:
                 return UIColor(red: 223, green: 142, blue: 20, alpha: 1)
@@ -109,7 +109,7 @@ extension UIColor {
                 return UIColor(red: 249, green: 226, blue: 175, alpha: 1)
             }
         }
-        var green: UIColor {
+        public var green: UIColor {
             switch style {
             case .latte:
                 return UIColor(red: 64, green: 160, blue: 43, alpha: 1)
@@ -121,7 +121,7 @@ extension UIColor {
                 return UIColor(red: 166, green: 227, blue: 161, alpha: 1)
             }
         }
-        var teal: UIColor {
+        public var teal: UIColor {
             switch style {
             case .latte:
                 return UIColor(red: 23, green: 146, blue: 153, alpha: 1)
@@ -133,7 +133,7 @@ extension UIColor {
                 return UIColor(red: 148, green: 226, blue: 213, alpha: 1)
             }
         }
-        var sky: UIColor {
+        public var sky: UIColor {
             switch style {
             case .latte:
                 return UIColor(red: 4, green: 165, blue: 229, alpha: 1)
@@ -145,7 +145,7 @@ extension UIColor {
                 return UIColor(red: 137, green: 220, blue: 235, alpha: 1)
             }
         }
-        var sapphire: UIColor {
+        public var sapphire: UIColor {
             switch style {
             case .latte:
                 return UIColor(red: 32, green: 159, blue: 181, alpha: 1)
@@ -157,7 +157,7 @@ extension UIColor {
                 return UIColor(red: 116, green: 199, blue: 236, alpha: 1)
             }
         }
-        var blue: UIColor {
+        public var blue: UIColor {
             switch style {
             case .latte:
                 return UIColor(red: 30, green: 102, blue: 245, alpha: 1)
@@ -169,7 +169,7 @@ extension UIColor {
                 return UIColor(red: 137, green: 180, blue: 254, alpha: 1)
             }
         }
-        var lavender: UIColor {
+        public var lavender: UIColor {
             switch style {
             case .latte:
                 return UIColor(red: 114, green: 135, blue: 253, alpha: 1)
@@ -181,7 +181,7 @@ extension UIColor {
                 return UIColor(red: 180, green: 190, blue: 254, alpha: 1)
             }
         }
-        var text: UIColor {
+        public var text: UIColor {
             switch style {
             case .latte:
                 return UIColor(red: 76, green: 79, blue: 105, alpha: 1)
@@ -193,7 +193,7 @@ extension UIColor {
                 return UIColor(red: 205, green: 214, blue: 244, alpha: 1)
             }
         }
-        var subtext1: UIColor {
+        public var subtext1: UIColor {
             switch style {
             case .latte:
                 return UIColor(red: 92, green: 95, blue: 119, alpha: 1)
@@ -205,7 +205,7 @@ extension UIColor {
                 return UIColor(red: 186, green: 194, blue: 222, alpha: 1)
             }
         }
-        var subtext0: UIColor {
+        public var subtext0: UIColor {
             switch style {
             case .latte:
                 return UIColor(red: 108, green: 111, blue: 133, alpha: 1)
@@ -217,7 +217,7 @@ extension UIColor {
                 return UIColor(red: 166, green: 173, blue: 200, alpha: 1)
             }
         }
-        var overlay2: UIColor {
+        public var overlay2: UIColor {
             switch style {
             case .latte:
                 return UIColor(red: 124, green: 127, blue: 148, alpha: 1)
@@ -229,7 +229,7 @@ extension UIColor {
                 return UIColor(red: 147, green: 163, blue: 178, alpha: 1)
             }
         }
-        var overlay1: UIColor {
+        public var overlay1: UIColor {
             switch style {
             case .latte:
                 return UIColor(red: 140, green: 143, blue: 161, alpha: 1)
@@ -241,7 +241,7 @@ extension UIColor {
                 return UIColor(red: 127, green: 132, blue: 156, alpha: 1)
             }
         }
-        var overlay0: UIColor {
+        public var overlay0: UIColor {
             switch style {
             case .latte:
                 return UIColor(red: 156, green: 160, blue: 176, alpha: 1)
@@ -253,7 +253,7 @@ extension UIColor {
                 return UIColor(red: 108, green: 112, blue: 134, alpha: 1)
             }
         }
-        var surface2: UIColor {
+        public var surface2: UIColor {
             switch style {
             case .latte:
                 return UIColor(red: 172, green: 176, blue: 190, alpha: 1)
@@ -265,7 +265,7 @@ extension UIColor {
                 return UIColor(red: 88, green: 91, blue: 112, alpha: 1)
             }
         }
-        var surface1: UIColor {
+        public var surface1: UIColor {
             switch style {
             case .latte:
                 return UIColor(red: 188, green: 192, blue: 204, alpha: 1)
@@ -277,7 +277,7 @@ extension UIColor {
                 return UIColor(red: 69, green: 71, blue: 90, alpha: 1)
             }
         }
-        var surface0: UIColor {
+        public var surface0: UIColor {
             switch style {
             case .latte:
                 return UIColor(red: 204, green: 208, blue: 218, alpha: 1)
@@ -289,7 +289,7 @@ extension UIColor {
                 return UIColor(red: 49, green: 50, blue: 68, alpha: 1)
             }
         }
-        var base: UIColor {
+        public var base: UIColor {
             switch style {
             case .latte:
                 return UIColor(red: 239, green: 241, blue: 245, alpha: 1)
@@ -301,7 +301,7 @@ extension UIColor {
                 return UIColor(red: 30, green: 30, blue: 46, alpha: 1)
             }
         }
-        var mantle: UIColor {
+        public var mantle: UIColor {
             switch style {
             case .latte:
                 return UIColor(red: 230, green: 233, blue: 239, alpha: 1)
@@ -313,7 +313,7 @@ extension UIColor {
                 return UIColor(red: 24, green: 24, blue: 37, alpha: 1)
             }
         }
-        var crust: UIColor {
+        public var crust: UIColor {
             switch style {
             case .latte:
                 return UIColor(red: 220, green: 224, blue: 232, alpha: 1)

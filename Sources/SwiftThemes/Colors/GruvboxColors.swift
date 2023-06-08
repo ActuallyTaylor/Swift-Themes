@@ -2,16 +2,16 @@
 
 import UIKit
 
-extension UIColor {
+public extension UIColor {
     struct Gruvbox {
-        enum Style {
+        public enum Style {
             case light
             case dark
         }
         
-        var style: Style
+        public var style: Style
 
-        var bg: UIColor {
+        public var bg: UIColor {
             switch style {
             case .light:
                 return UIColor(hex: "fbf1c7")
@@ -20,35 +20,35 @@ extension UIColor {
             }
         }
 
-        var red: UIColor {
+        public var red: UIColor {
             return UIColor(hex: "cc241d")
         }
 
-        var green: UIColor {
+        public var green: UIColor {
             return UIColor(hex: "98971a")
         }
         
-        var yellow: UIColor {
+        public var yellow: UIColor {
             return UIColor(hex: "d79921")
         }
         
-        var blue: UIColor {
+        public var blue: UIColor {
             return UIColor(hex: "458588")
         }
 
-        var purple: UIColor {
+        public var purple: UIColor {
             return UIColor(hex: "b16286")
         }
 
-        var aqua: UIColor {
+        public var aqua: UIColor {
             return UIColor(hex: "689d6a")
         }
 
-        var gray: UIColor {
+        public var gray: UIColor {
             return UIColor(hex: "a89984")
         }
 
-        var bg0_h: UIColor {
+        public var bg0_h: UIColor {
             switch style {
             case .light:
                 return UIColor(hex: "f95d7")
@@ -57,7 +57,7 @@ extension UIColor {
             }
         }
 
-        var bg0: UIColor {
+        public var bg0: UIColor {
             switch style {
             case .light:
                 return UIColor(hex: "fbf1c7")
@@ -66,7 +66,7 @@ extension UIColor {
             }
         }
         
-        var bg0_s: UIColor {
+        public var bg0_s: UIColor {
             switch style {
             case .light:
                 return UIColor(hex: "f2e5bc")
@@ -75,7 +75,7 @@ extension UIColor {
             }
         }
 
-        var bg1: UIColor {
+        public var bg1: UIColor {
             switch style {
             case .light:
                 return UIColor(hex: "ebdbb2")
@@ -84,7 +84,7 @@ extension UIColor {
             }
         }
         
-        var bg2: UIColor {
+        public var bg2: UIColor {
             switch style {
             case .light:
                 return UIColor(hex: "d5c4a1")
@@ -93,7 +93,7 @@ extension UIColor {
             }
         }
 
-        var bg3: UIColor {
+        public var bg3: UIColor {
             switch style {
             case .light:
                 return UIColor(hex: "bdae93")
@@ -102,7 +102,7 @@ extension UIColor {
             }
         }
         
-        var bg4: UIColor {
+        public var bg4: UIColor {
             switch style {
             case .light:
                 return UIColor(hex: "a89984")
@@ -111,15 +111,15 @@ extension UIColor {
             }
         }
 
-        var darkGray: UIColor {
+        public var darkGray: UIColor {
             return UIColor(hex: "928374")
         }
 
-        var orange: UIColor {
+        public var orange: UIColor {
             return UIColor(hex: "d65d0e")
         }
 
-        var fg: UIColor {
+        public var fg: UIColor {
             switch style {
             case .light:
                 return UIColor(hex: "3c3836")
@@ -128,7 +128,7 @@ extension UIColor {
             }
         }
         
-        var fg0: UIColor {
+        public var fg0: UIColor {
             switch style {
             case .light:
                 return UIColor(hex: "282828")
@@ -137,7 +137,7 @@ extension UIColor {
             }
         }
 
-        var fg1: UIColor {
+        public var fg1: UIColor {
             switch style {
             case .light:
                 return UIColor(hex: "3c3836")
@@ -146,7 +146,7 @@ extension UIColor {
             }
         }
         
-        var fg2: UIColor {
+        public var fg2: UIColor {
             switch style {
             case .light:
                 return UIColor(hex: "504945")
@@ -155,7 +155,7 @@ extension UIColor {
             }
         }
 
-        var fg3: UIColor {
+        public var fg3: UIColor {
             switch style {
             case .light:
                 return UIColor(hex: "655c54")
@@ -164,7 +164,7 @@ extension UIColor {
             }
         }
 
-        var fg4: UIColor {
+        public var fg4: UIColor {
             switch style {
             case .light:
                 return UIColor(hex: "7c6f64")

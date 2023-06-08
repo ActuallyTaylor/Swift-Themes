@@ -4,12 +4,13 @@
 import PackageDescription
 
 let package = Package(
-    name: "RunestoneThemes",
+    name: "SwiftThemes",
     platforms: [
         .iOS(.v14)
     ],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
+        .library(name: "SwiftThemes", targets: ["SwiftThemes"]),
         .library(name: "RunestoneThemes", targets: ["RunestoneThemes"]),
     ],
     dependencies: [
@@ -18,6 +19,7 @@ let package = Package(
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
-        .target(name: "RunestoneThemes", dependencies: ["Runestone"]),
+        .target(name: "SwiftThemes"),
+        .target(name: "RunestoneThemes", dependencies: ["Runestone", "SwiftThemes"]),
     ]
 )
