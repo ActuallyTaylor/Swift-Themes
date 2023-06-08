@@ -1,0 +1,338 @@
+/// Derived from https://github.com/catppuccin/catppuccin
+
+import UIKit
+
+extension UIColor {
+    struct Catppuccin {
+        enum Style {
+            case latte
+            case frappe
+            case macchiato
+            case mocha
+        }
+        
+        var style: Style
+        
+        var rosewater: UIColor {
+            switch style {
+            case .latte:
+                return UIColor(red: 220, green: 138, blue: 120, alpha: 1)
+            case .frappe:
+                return UIColor(red: 242, green: 213, blue: 207, alpha: 1)
+            case .macchiato:
+                return UIColor(red: 244, green: 219, blue: 214, alpha: 1)
+            case .mocha:
+                return UIColor(red: 245, green: 224, blue: 220, alpha: 1)
+            }
+        }
+        var flamingo: UIColor {
+            switch style {
+            case .latte:
+                return UIColor(red: 221, green: 120, blue: 120, alpha: 1)
+            case .frappe:
+                return UIColor(red: 238, green: 190, blue: 190, alpha: 1)
+            case .macchiato:
+                return UIColor(red: 240, green: 198, blue: 198, alpha: 1)
+            case .mocha:
+                return UIColor(red: 242, green: 205, blue: 205, alpha: 1)
+            }
+        }
+        var pink: UIColor {
+            switch style {
+            case .latte:
+                return UIColor(red: 234, green: 118, blue: 203, alpha: 1)
+            case .frappe:
+                return UIColor(red: 244, green: 184, blue: 228, alpha: 1)
+            case .macchiato:
+                return UIColor(red: 245, green: 189, blue: 230, alpha: 1)
+            case .mocha:
+                return UIColor(red: 245, green: 194, blue: 231, alpha: 1)
+            }
+        }
+        var mauve: UIColor {
+            switch style {
+            case .latte:
+                return UIColor(red: 136, green: 57, blue: 239, alpha: 1)
+            case .frappe:
+                return UIColor(red: 202, green: 158, blue: 230, alpha: 1)
+            case .macchiato:
+                return UIColor(red: 198, green: 160, blue: 246, alpha: 1)
+            case .mocha:
+                return UIColor(red: 203, green: 166, blue: 247, alpha: 1)
+            }
+        }
+        var red: UIColor {
+            switch style {
+            case .latte:
+                return UIColor(red: 210, green: 15, blue: 57, alpha: 1)
+            case .frappe:
+                return UIColor(red: 231, green: 130, blue: 132, alpha: 1)
+            case .macchiato:
+                return UIColor(red: 237, green: 135, blue: 150, alpha: 1)
+            case .mocha:
+                return UIColor(red: 243, green: 139, blue: 168, alpha: 1)
+            }
+        }
+        var maroon: UIColor {
+            switch style {
+            case .latte:
+                return UIColor(red: 230, green: 69, blue: 83, alpha: 1)
+            case .frappe:
+                return UIColor(red: 234, green: 153, blue: 156, alpha: 1)
+            case .macchiato:
+                return UIColor(red: 238, green: 153, blue: 160, alpha: 1)
+            case .mocha:
+                return UIColor(red: 235, green: 160, blue: 172, alpha: 1)
+            }
+        }
+        var peach: UIColor {
+            switch style {
+            case .latte:
+                return UIColor(red: 254, green: 100, blue: 11, alpha: 1)
+            case .frappe:
+                return UIColor(red: 239, green: 159, blue: 118, alpha: 1)
+            case .macchiato:
+                return UIColor(red: 245, green: 169, blue: 127, alpha: 1)
+            case .mocha:
+                return UIColor(red: 250, green: 179, blue: 135, alpha: 1)
+            }
+        }
+        var yellow: UIColor {
+            switch style {
+            case .latte:
+                return UIColor(red: 223, green: 142, blue: 20, alpha: 1)
+            case .frappe:
+                return UIColor(red: 229, green: 200, blue: 144, alpha: 1)
+            case .macchiato:
+                return UIColor(red: 238, green: 212, blue: 159, alpha: 1)
+            case .mocha:
+                return UIColor(red: 249, green: 226, blue: 175, alpha: 1)
+            }
+        }
+        var green: UIColor {
+            switch style {
+            case .latte:
+                return UIColor(red: 64, green: 160, blue: 43, alpha: 1)
+            case .frappe:
+                return UIColor(red: 166, green: 209, blue: 137, alpha: 1)
+            case .macchiato:
+                return UIColor(red: 166, green: 218, blue: 149, alpha: 1)
+            case .mocha:
+                return UIColor(red: 166, green: 227, blue: 161, alpha: 1)
+            }
+        }
+        var teal: UIColor {
+            switch style {
+            case .latte:
+                return UIColor(red: 23, green: 146, blue: 153, alpha: 1)
+            case .frappe:
+                return UIColor(red: 129, green: 200, blue: 190, alpha: 1)
+            case .macchiato:
+                return UIColor(red: 139, green: 213, blue: 202, alpha: 1)
+            case .mocha:
+                return UIColor(red: 148, green: 226, blue: 213, alpha: 1)
+            }
+        }
+        var sky: UIColor {
+            switch style {
+            case .latte:
+                return UIColor(red: 4, green: 165, blue: 229, alpha: 1)
+            case .frappe:
+                return UIColor(red: 153, green: 209, blue: 219, alpha: 1)
+            case .macchiato:
+                return UIColor(red: 145, green: 215, blue: 227, alpha: 1)
+            case .mocha:
+                return UIColor(red: 137, green: 220, blue: 235, alpha: 1)
+            }
+        }
+        var sapphire: UIColor {
+            switch style {
+            case .latte:
+                return UIColor(red: 32, green: 159, blue: 181, alpha: 1)
+            case .frappe:
+                return UIColor(red: 133, green: 139, blue: 220, alpha: 1)
+            case .macchiato:
+                return UIColor(red: 125, green: 196, blue: 228, alpha: 1)
+            case .mocha:
+                return UIColor(red: 116, green: 199, blue: 236, alpha: 1)
+            }
+        }
+        var blue: UIColor {
+            switch style {
+            case .latte:
+                return UIColor(red: 30, green: 102, blue: 245, alpha: 1)
+            case .frappe:
+                return UIColor(red: 140, green: 170, blue: 238, alpha: 1)
+            case .macchiato:
+                return UIColor(red: 138, green: 173, blue: 244, alpha: 1)
+            case .mocha:
+                return UIColor(red: 137, green: 180, blue: 254, alpha: 1)
+            }
+        }
+        var lavender: UIColor {
+            switch style {
+            case .latte:
+                return UIColor(red: 114, green: 135, blue: 253, alpha: 1)
+            case .frappe:
+                return UIColor(red: 186, green: 187, blue: 241, alpha: 1)
+            case .macchiato:
+                return UIColor(red: 183, green: 189, blue: 248, alpha: 1)
+            case .mocha:
+                return UIColor(red: 180, green: 190, blue: 254, alpha: 1)
+            }
+        }
+        var text: UIColor {
+            switch style {
+            case .latte:
+                return UIColor(red: 76, green: 79, blue: 105, alpha: 1)
+            case .frappe:
+                return UIColor(red: 198, green: 208, blue: 245, alpha: 1)
+            case .macchiato:
+                return UIColor(red: 202, green: 211, blue: 245, alpha: 1)
+            case .mocha:
+                return UIColor(red: 205, green: 214, blue: 244, alpha: 1)
+            }
+        }
+        var subtext1: UIColor {
+            switch style {
+            case .latte:
+                return UIColor(red: 92, green: 95, blue: 119, alpha: 1)
+            case .frappe:
+                return UIColor(red: 181, green: 191, blue: 226, alpha: 1)
+            case .macchiato:
+                return UIColor(red: 184, green: 192, blue: 224, alpha: 1)
+            case .mocha:
+                return UIColor(red: 186, green: 194, blue: 222, alpha: 1)
+            }
+        }
+        var subtext0: UIColor {
+            switch style {
+            case .latte:
+                return UIColor(red: 108, green: 111, blue: 133, alpha: 1)
+            case .frappe:
+                return UIColor(red: 165, green: 173, blue: 206, alpha: 1)
+            case .macchiato:
+                return UIColor(red: 165, green: 173, blue: 203, alpha: 1)
+            case .mocha:
+                return UIColor(red: 166, green: 173, blue: 200, alpha: 1)
+            }
+        }
+        var overlay2: UIColor {
+            switch style {
+            case .latte:
+                return UIColor(red: 124, green: 127, blue: 148, alpha: 1)
+            case .frappe:
+                return UIColor(red: 148, green: 156, blue: 187, alpha: 1)
+            case .macchiato:
+                return UIColor(red: 147, green: 154, blue: 183, alpha: 1)
+            case .mocha:
+                return UIColor(red: 147, green: 163, blue: 178, alpha: 1)
+            }
+        }
+        var overlay1: UIColor {
+            switch style {
+            case .latte:
+                return UIColor(red: 140, green: 143, blue: 161, alpha: 1)
+            case .frappe:
+                return UIColor(red: 131, green: 139, blue: 167, alpha: 1)
+            case .macchiato:
+                return UIColor(red: 128, green: 135, blue: 141, alpha: 1)
+            case .mocha:
+                return UIColor(red: 127, green: 132, blue: 156, alpha: 1)
+            }
+        }
+        var overlay0: UIColor {
+            switch style {
+            case .latte:
+                return UIColor(red: 156, green: 160, blue: 176, alpha: 1)
+            case .frappe:
+                return UIColor(red: 115, green: 121, blue: 148, alpha: 1)
+            case .macchiato:
+                return UIColor(red: 110, green: 115, blue: 141, alpha: 1)
+            case .mocha:
+                return UIColor(red: 108, green: 112, blue: 134, alpha: 1)
+            }
+        }
+        var surface2: UIColor {
+            switch style {
+            case .latte:
+                return UIColor(red: 172, green: 176, blue: 190, alpha: 1)
+            case .frappe:
+                return UIColor(red: 98, green: 104, blue: 128, alpha: 1)
+            case .macchiato:
+                return UIColor(red: 91, green: 96, blue: 120, alpha: 1)
+            case .mocha:
+                return UIColor(red: 88, green: 91, blue: 112, alpha: 1)
+            }
+        }
+        var surface1: UIColor {
+            switch style {
+            case .latte:
+                return UIColor(red: 188, green: 192, blue: 204, alpha: 1)
+            case .frappe:
+                return UIColor(red: 81, green: 87, blue: 109, alpha: 1)
+            case .macchiato:
+                return UIColor(red: 73, green: 77, blue: 100, alpha: 1)
+            case .mocha:
+                return UIColor(red: 69, green: 71, blue: 90, alpha: 1)
+            }
+        }
+        var surface0: UIColor {
+            switch style {
+            case .latte:
+                return UIColor(red: 204, green: 208, blue: 218, alpha: 1)
+            case .frappe:
+                return UIColor(red: 65, green: 69, blue: 89, alpha: 1)
+            case .macchiato:
+                return UIColor(red: 54, green: 58, blue: 79, alpha: 1)
+            case .mocha:
+                return UIColor(red: 49, green: 50, blue: 68, alpha: 1)
+            }
+        }
+        var base: UIColor {
+            switch style {
+            case .latte:
+                return UIColor(red: 239, green: 241, blue: 245, alpha: 1)
+            case .frappe:
+                return UIColor(red: 48, green: 52, blue: 70, alpha: 1)
+            case .macchiato:
+                return UIColor(red: 36, green: 39, blue: 58, alpha: 1)
+            case .mocha:
+                return UIColor(red: 30, green: 30, blue: 46, alpha: 1)
+            }
+        }
+        var mantle: UIColor {
+            switch style {
+            case .latte:
+                return UIColor(red: 230, green: 233, blue: 239, alpha: 1)
+            case .frappe:
+                return UIColor(red: 41, green: 44, blue: 60, alpha: 1)
+            case .macchiato:
+                return UIColor(red: 30, green: 32, blue: 48, alpha: 1)
+            case .mocha:
+                return UIColor(red: 24, green: 24, blue: 37, alpha: 1)
+            }
+        }
+        var crust: UIColor {
+            switch style {
+            case .latte:
+                return UIColor(red: 220, green: 224, blue: 232, alpha: 1)
+            case .frappe:
+                return UIColor(red: 35, green: 38, blue: 52, alpha: 1)
+            case .macchiato:
+                return UIColor(red: 24, green: 25, blue: 38, alpha: 1)
+            case .mocha:
+                return UIColor(red: 17, green: 17, blue: 27, alpha: 1)
+            }
+        }
+
+        fileprivate init(_ style: Style) {
+            self.style = style
+        }
+    }
+    
+    static let catppuccinLatte = Catppuccin(.latte)
+    static let catppuccinFrappe = Catppuccin(.frappe)
+    static let catppuccinMacchiato = Catppuccin(.macchiato)
+    static let catppuccinMocha = Catppuccin(.mocha)
+}

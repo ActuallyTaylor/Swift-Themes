@@ -1,10 +1,3 @@
-//
-//  TomorrowTheme.swift
-//  RunestoneThemes
-//
-//  Created by Taylor Lineman on 6/7/23.
-//
-
 import Runestone
 import UIKit
 
