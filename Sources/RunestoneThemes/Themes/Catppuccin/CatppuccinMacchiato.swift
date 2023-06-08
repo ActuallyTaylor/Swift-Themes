@@ -38,7 +38,7 @@ class CatppuccinMacchiato: Theme {
         case .number, .constantBuiltin, .constantCharacter:
             return .catppuccinMacchiato.peach
         case .property:
-            return .tomorrow.aqua
+            return .catppuccinMacchiato.lavender
         case .string:
             return .catppuccinMacchiato.green
         case .variableBuiltin:
