@@ -13,3 +13,7 @@ The eventual goal for this repository is to build ontop of it a drop-in theme en
 5. Catppuccin Mocha
 6. Solarized Light
 7. Solarized Dark
+8. Tomorrow Night
+9. Tomorrow Night Eighties
+10. Tomorrow Night Bright
+11. Tomorrow Night Blue

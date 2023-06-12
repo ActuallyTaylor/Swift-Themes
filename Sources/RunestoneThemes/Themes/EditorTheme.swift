@@ -8,6 +8,11 @@ public enum EditorTheme: Int, CaseIterable, Identifiable, Comparable {
     }
     
     case tomorrow
+    case tomorrowNight
+    case tomorrowNightEighties
+    case tomorrowNightBlue
+    case tomorrowNightBright
+
     case gruvboxLight
     case gruvboxDark
     case catppuccinLatte
@@ -37,6 +42,14 @@ public enum EditorTheme: Int, CaseIterable, Identifiable, Comparable {
             return .solarizedLight.background
         case .solarizedDark:
             return .solarizedDark.background
+        case .tomorrowNight:
+            return .tomorrowNight.background
+        case .tomorrowNightEighties:
+            return .tomorrowNightEighties.background
+        case .tomorrowNightBlue:
+            return .tomorrowNightBlue.background
+        case .tomorrowNightBright:
+            return .tomorrowNightBright.background
         }
     }
     
@@ -60,6 +73,14 @@ public enum EditorTheme: Int, CaseIterable, Identifiable, Comparable {
             return .solarizedLight.foreground
         case .solarizedDark:
             return .solarizedDark.foreground
+        case .tomorrowNight:
+            return .tomorrowNight.foreground
+        case .tomorrowNightEighties:
+            return .tomorrowNightEighties.foreground
+        case .tomorrowNightBlue:
+            return .tomorrowNightBlue.foreground
+        case .tomorrowNightBright:
+            return .tomorrowNightBright.foreground
         }
     }
 
@@ -67,7 +88,7 @@ public enum EditorTheme: Int, CaseIterable, Identifiable, Comparable {
     public var runestoneTheme: Theme {
         switch self {
         case .tomorrow:
-            return TomorrowTheme()
+            return Tomorrow()
         case .gruvboxLight:
             return GruvboxLight()
         case .gruvboxDark:
@@ -84,6 +105,14 @@ public enum EditorTheme: Int, CaseIterable, Identifiable, Comparable {
             return SolarizedLight()
         case .solarizedDark:
             return SolarizedDark()
+        case .tomorrowNight:
+            return TomorrowNight()
+        case .tomorrowNightEighties:
+            return TomorrowNightEighties()
+        case .tomorrowNightBlue:
+            return TomorrowNightBlue()
+        case .tomorrowNightBright:
+            return TomorrowNightBright()
         }
     }
     
@@ -107,6 +136,14 @@ public enum EditorTheme: Int, CaseIterable, Identifiable, Comparable {
             return "Solarized Light"
         case .solarizedDark:
             return "Solarized Dark"
+        case .tomorrowNight:
+            return "Tomorrow Night"
+        case .tomorrowNightEighties:
+            return "Tomorrow Night Eighties"
+        case .tomorrowNightBlue:
+            return "Tomorrow Night Blue"
+        case .tomorrowNightBright:
+            return "Tomorrow Night Bright"
         }
     }
     
@@ -129,6 +166,14 @@ public enum EditorTheme: Int, CaseIterable, Identifiable, Comparable {
         case .solarizedLight:
             return false
         case .solarizedDark:
+            return true
+        case .tomorrowNight:
+            return true
+        case .tomorrowNightEighties:
+            return true
+        case .tomorrowNightBlue:
+            return true
+        case .tomorrowNightBright:
             return true
         }
     }
@@ -153,6 +198,14 @@ public enum EditorTheme: Int, CaseIterable, Identifiable, Comparable {
             return .solarizedLight.comment
         case .solarizedDark:
             return .solarizedDark.comment
+        case .tomorrowNight:
+            return .tomorrowNight.selection
+        case .tomorrowNightEighties:
+            return .tomorrowNight.selection
+        case .tomorrowNightBlue:
+            return .tomorrowNight.selection
+        case .tomorrowNightBright:
+            return .tomorrowNight.selection
         }
     }
     

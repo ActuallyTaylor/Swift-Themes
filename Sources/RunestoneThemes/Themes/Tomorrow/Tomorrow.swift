@@ -2,7 +2,7 @@ import SwiftThemes
 import Runestone
 import UIKit
 
-class TomorrowTheme: Theme {
+class Tomorrow: Theme {
     let font: UIFont = .monospacedSystemFont(ofSize: 14, weight: .regular)
     let textColor: UIColor = .tomorrow.foreground
 
@@ -12,7 +12,7 @@ class TomorrowTheme: Theme {
     let lineNumberColor: UIColor = .tomorrow.comment
     let lineNumberFont: UIFont = .monospacedSystemFont(ofSize: 14, weight: .regular)
 
-    let selectedLineBackgroundColor: UIColor = .tomorrow.currentLine
+    let selectedLineBackgroundColor: UIColor = .tomorrow.line
     let selectedLinesLineNumberColor: UIColor = .tomorrow.foreground
     let selectedLinesGutterBackgroundColor: UIColor = .tomorrow.background
 
