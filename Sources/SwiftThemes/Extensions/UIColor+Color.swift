@@ -1,8 +1,9 @@
-//
-//  File.swift
-//  
-//
-//  Created by Taylor Lineman on 6/26/23.
-//
+import UIKit
+import SwiftUI
 
-import Foundation
+@available(iOS 15.0, *)
+extension UIColor {
+    var color: Color {
+        return Color(uiColor: self)
+    }
+}
