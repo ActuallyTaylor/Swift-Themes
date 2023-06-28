@@ -19,9 +19,8 @@
  cyan      #2aa198  6/6 cyan      37 #00afaf 60 -35 -05  42 161 152 175  74  63
  green     #859900  2/2 green     64 #5f8700 60 -20  65 133 153   0  68 100  60
  */
-import UIKit
 
-public extension UIColor {
+public extension BridgeColor {
     struct Solarized {
         public enum Style {
             case light
@@ -30,74 +29,74 @@ public extension UIColor {
         
         public var style: Style
         
-        public var foreground: UIColor {
+        public var foreground: BridgeColor {
             switch style {
             case .light:
-                return UIColor(hex: "657b83")
+                return BridgeColor(hex: "657b83")
             case .dark:
-                return UIColor(hex: "859900")
+                return BridgeColor(hex: "859900")
             }
         }
         
-        public var emphasis: UIColor {
+        public var emphasis: BridgeColor {
             switch style {
             case .light:
-                return UIColor(hex: "586e75")
+                return BridgeColor(hex: "586e75")
             case .dark:
-                return UIColor(hex: "93a1a1")
+                return BridgeColor(hex: "93a1a1")
             }
         }
         
-        public var comment: UIColor {
+        public var comment: BridgeColor {
             switch style {
             case .light:
-                return UIColor(hex: "93a1a1")
+                return BridgeColor(hex: "93a1a1")
             case .dark:
-                return UIColor(hex: "586e75")
+                return BridgeColor(hex: "586e75")
             }
         }
 
-        public var backgroundHighlights: UIColor {
+        public var backgroundHighlights: BridgeColor {
             switch style {
             case .light:
-                return UIColor(hex: "eee8d5")
+                return BridgeColor(hex: "eee8d5")
             case .dark:
-                return UIColor(hex: "073642")
+                return BridgeColor(hex: "073642")
             }
         }
 
-        public var background: UIColor {
+        public var background: BridgeColor {
             switch style {
             case .light:
-                return UIColor(hex: "fdf6e3")
+                return BridgeColor(hex: "fdf6e3")
             case .dark:
-                return UIColor(hex: "002b36")
+                return BridgeColor(hex: "002b36")
             }
         }
 
-        public var yellow: UIColor {
-            return UIColor(hex: "b58900")
+        public var yellow: BridgeColor {
+            return BridgeColor(hex: "b58900")
         }
-        public var orange: UIColor {
-            return UIColor(hex: "cb4b16")
+        public var orange: BridgeColor {
+            return BridgeColor(hex: "cb4b16")
         }
-        public var red: UIColor {
-            return UIColor(hex: "dc322f")
+        public var red: BridgeColor {
+            return BridgeColor(hex: "dc322f")
         }
-        public var magenta: UIColor {
-            return UIColor(hex: "d33682")
+        public var magenta: BridgeColor {
+            return BridgeColor(hex: "d33682")
         }
-        public var violet: UIColor {
-            return UIColor(hex: "6c71c4")
+        public var violet: BridgeColor {
+            return BridgeColor(hex: "6c71c4")
         }
-        public var blue: UIColor {
-            return UIColor(hex: "268bd2")
+        public var blue: BridgeColor {
+            return BridgeColor(hex: "268bd2")
         }
-        public var cyan: UIColor {
-            return UIColor(hex: "2aa198")
+        public var cyan: BridgeColor {
+            return BridgeColor(hex: "2aa198")
         }
-        public var green: UIColor {
-            return UIColor(hex: "859900")
+        public var green: BridgeColor {
+            return BridgeColor(hex: "859900")
         }
         
         fileprivate init(_ style: Style) {

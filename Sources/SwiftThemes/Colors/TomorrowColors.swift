@@ -1,7 +1,6 @@
 // Derived from https://github.com/ChrisKempson/Tomorrow-Theme
-import UIKit
 
-public extension UIColor {
+public extension BridgeColor {
     struct Tomorrow {
         public enum Style {
             case day
@@ -13,183 +12,183 @@ public extension UIColor {
 
         public var style: Style
 
-        public var background: UIColor {
+        public var background: BridgeColor {
             switch style {
             case .day:
-                return UIColor(hex: "ffffff")
+                return BridgeColor(hex: "ffffff")
             case .night:
-                return UIColor(hex: "1d1f21")
+                return BridgeColor(hex: "1d1f21")
             case .nightEighties:
-                return UIColor(hex: "2d2d2d")
+                return BridgeColor(hex: "2d2d2d")
             case .nightBlue:
-                return UIColor(hex: "002451")
+                return BridgeColor(hex: "002451")
             case .nightBright:
-                return UIColor(hex: "000000")
+                return BridgeColor(hex: "000000")
             }
         }
 
-        public var foreground: UIColor {
+        public var foreground: BridgeColor {
             switch style {
             case .day:
-                return UIColor(hex: "4d4d4c")
+                return BridgeColor(hex: "4d4d4c")
             case .night:
-                return UIColor(hex: "c5c8c6")
+                return BridgeColor(hex: "c5c8c6")
             case .nightEighties:
-                return UIColor(hex: "cccccc")
+                return BridgeColor(hex: "cccccc")
             case .nightBlue:
-                return UIColor(hex: "ffffff")
+                return BridgeColor(hex: "ffffff")
             case .nightBright:
-                return UIColor(hex: "eaeaea")
+                return BridgeColor(hex: "eaeaea")
             }
         }
 
-        public var selection: UIColor {
+        public var selection: BridgeColor {
             switch style {
             case .day:
-                return UIColor(hex: "d6d6d6")
+                return BridgeColor(hex: "d6d6d6")
             case .night:
-                return UIColor(hex: "373b41")
+                return BridgeColor(hex: "373b41")
             case .nightEighties:
-                return UIColor(hex: "515151")
+                return BridgeColor(hex: "515151")
             case .nightBlue:
-                return UIColor(hex: "003f8e")
+                return BridgeColor(hex: "003f8e")
             case .nightBright:
-                return UIColor(hex: "424242")
+                return BridgeColor(hex: "424242")
             }
         }
 
-        public var line: UIColor {
+        public var line: BridgeColor {
             switch style {
             case .day:
-                return UIColor(hex: "efefef")
+                return BridgeColor(hex: "efefef")
             case .night:
-                return UIColor(hex: "282a2e")
+                return BridgeColor(hex: "282a2e")
             case .nightEighties:
-                return UIColor(hex: "393939")
+                return BridgeColor(hex: "393939")
             case .nightBlue:
-                return UIColor(hex: "00346e")
+                return BridgeColor(hex: "00346e")
             case .nightBright:
-                return UIColor(hex: "2a2a2a")
+                return BridgeColor(hex: "2a2a2a")
             }
         }
 
-        public var comment: UIColor {
+        public var comment: BridgeColor {
             switch style {
             case .day:
-                return UIColor(hex: "8e908c")
+                return BridgeColor(hex: "8e908c")
             case .night:
-                return UIColor(hex: "969896")
+                return BridgeColor(hex: "969896")
             case .nightEighties:
-                return UIColor(hex: "999999")
+                return BridgeColor(hex: "999999")
             case .nightBlue:
-                return UIColor(hex: "7285b7")
+                return BridgeColor(hex: "7285b7")
             case .nightBright:
-                return UIColor(hex: "969896")
+                return BridgeColor(hex: "969896")
             }
         }
 
-        public var red: UIColor {
+        public var red: BridgeColor {
             switch style {
             case .day:
-                return UIColor(hex: "c82829")
+                return BridgeColor(hex: "c82829")
             case .night:
-                return UIColor(hex: "cc6666")
+                return BridgeColor(hex: "cc6666")
             case .nightEighties:
-                return UIColor(hex: "f2777a")
+                return BridgeColor(hex: "f2777a")
             case .nightBlue:
-                return UIColor(hex: "ff9da4")
+                return BridgeColor(hex: "ff9da4")
             case .nightBright:
-                return UIColor(hex: "d54e53")
+                return BridgeColor(hex: "d54e53")
             }
         }
 
-        public var orange: UIColor {
+        public var orange: BridgeColor {
             switch style {
             case .day:
-                return UIColor(hex: "f871f")
+                return BridgeColor(hex: "f871f")
             case .night:
-                return UIColor(hex: "de935f")
+                return BridgeColor(hex: "de935f")
             case .nightEighties:
-                return UIColor(hex: "f99157")
+                return BridgeColor(hex: "f99157")
             case .nightBlue:
-                return UIColor(hex: "ffc58f")
+                return BridgeColor(hex: "ffc58f")
             case .nightBright:
-                return UIColor(hex: "e78c45")
+                return BridgeColor(hex: "e78c45")
             }
         }
 
-        public var yellow: UIColor {
+        public var yellow: BridgeColor {
             switch style {
             case .day:
-                return UIColor(hex: "eab700")
+                return BridgeColor(hex: "eab700")
             case .night:
-                return UIColor(hex: "f0c674")
+                return BridgeColor(hex: "f0c674")
             case .nightEighties:
-                return UIColor(hex: "ffcc66")
+                return BridgeColor(hex: "ffcc66")
             case .nightBlue:
-                return UIColor(hex: "ffeead")
+                return BridgeColor(hex: "ffeead")
             case .nightBright:
-                return UIColor(hex: "e7c547")
+                return BridgeColor(hex: "e7c547")
             }
         }
 
-        public var green: UIColor {
+        public var green: BridgeColor {
             switch style {
             case .day:
-                return UIColor(hex: "718c00")
+                return BridgeColor(hex: "718c00")
             case .night:
-                return UIColor(hex: "b5bd68")
+                return BridgeColor(hex: "b5bd68")
             case .nightEighties:
-                return UIColor(hex: "99cc99")
+                return BridgeColor(hex: "99cc99")
             case .nightBlue:
-                return UIColor(hex: "d1f1a9")
+                return BridgeColor(hex: "d1f1a9")
             case .nightBright:
-                return UIColor(hex: "b9ca4a")
+                return BridgeColor(hex: "b9ca4a")
             }
         }
 
-        public var aqua: UIColor {
+        public var aqua: BridgeColor {
             switch style {
             case .day:
-                return UIColor(hex: "3e99f")
+                return BridgeColor(hex: "3e99f")
             case .night:
-                return UIColor(hex: "8abeb7")
+                return BridgeColor(hex: "8abeb7")
             case .nightEighties:
-                return UIColor(hex: "66cccc")
+                return BridgeColor(hex: "66cccc")
             case .nightBlue:
-                return UIColor(hex: "99ffff")
+                return BridgeColor(hex: "99ffff")
             case .nightBright:
-                return UIColor(hex: "70c0b1")
+                return BridgeColor(hex: "70c0b1")
             }
         }
 
-        public var blue: UIColor {
+        public var blue: BridgeColor {
             switch style {
             case .day:
-                return UIColor(hex: "4271ae")
+                return BridgeColor(hex: "4271ae")
             case .night:
-                return UIColor(hex: "81a2be")
+                return BridgeColor(hex: "81a2be")
             case .nightEighties:
-                return UIColor(hex: "6699cc")
+                return BridgeColor(hex: "6699cc")
             case .nightBlue:
-                return UIColor(hex: "bbdaff")
+                return BridgeColor(hex: "bbdaff")
             case .nightBright:
-                return UIColor(hex: "7aa6da")
+                return BridgeColor(hex: "7aa6da")
             }
         }
 
-        public var purple: UIColor {
+        public var purple: BridgeColor {
             switch style {
             case .day:
-                return UIColor(hex: "8959a8")
+                return BridgeColor(hex: "8959a8")
             case .night:
-                return UIColor(hex: "b294bb")
+                return BridgeColor(hex: "b294bb")
             case .nightEighties:
-                return UIColor(hex: "cc99cc")
+                return BridgeColor(hex: "cc99cc")
             case .nightBlue:
-                return UIColor(hex: "ebbbff")
+                return BridgeColor(hex: "ebbbff")
             case .nightBright:
-                return UIColor(hex: "c397d8")
+                return BridgeColor(hex: "c397d8")
             }
         }
 

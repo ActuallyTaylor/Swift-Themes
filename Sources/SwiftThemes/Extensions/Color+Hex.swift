@@ -32,6 +32,6 @@ extension Color {
     }
 
     var hexString: String {
-        return UIColor(self).hexString
+        return BridgeColor(self).hexString
     }
 }

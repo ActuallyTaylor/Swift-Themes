@@ -1,8 +1,6 @@
 /// Derived from https://github.com/catppuccin/catppuccin
 
-import UIKit
-
-public extension UIColor {
+public extension BridgeColor {
     struct Gruvbox {
         public enum Style {
             case light
@@ -11,165 +9,165 @@ public extension UIColor {
         
         public var style: Style
 
-        public var bg: UIColor {
+        public var bg: BridgeColor {
             switch style {
             case .light:
-                return UIColor(hex: "fbf1c7")
+                return BridgeColor(hex: "fbf1c7")
             case .dark:
-                return UIColor(hex: "282828")
+                return BridgeColor(hex: "282828")
             }
         }
 
-        public var red: UIColor {
-            return UIColor(hex: "cc241d")
+        public var red: BridgeColor {
+            return BridgeColor(hex: "cc241d")
         }
 
-        public var green: UIColor {
-            return UIColor(hex: "98971a")
+        public var green: BridgeColor {
+            return BridgeColor(hex: "98971a")
         }
         
-        public var yellow: UIColor {
-            return UIColor(hex: "d79921")
+        public var yellow: BridgeColor {
+            return BridgeColor(hex: "d79921")
         }
         
-        public var blue: UIColor {
-            return UIColor(hex: "458588")
+        public var blue: BridgeColor {
+            return BridgeColor(hex: "458588")
         }
 
-        public var purple: UIColor {
-            return UIColor(hex: "b16286")
+        public var purple: BridgeColor {
+            return BridgeColor(hex: "b16286")
         }
 
-        public var aqua: UIColor {
-            return UIColor(hex: "689d6a")
+        public var aqua: BridgeColor {
+            return BridgeColor(hex: "689d6a")
         }
 
-        public var gray: UIColor {
-            return UIColor(hex: "a89984")
+        public var gray: BridgeColor {
+            return BridgeColor(hex: "a89984")
         }
 
-        public var bg0_h: UIColor {
+        public var bg0_h: BridgeColor {
             switch style {
             case .light:
-                return UIColor(hex: "f95d7")
+                return BridgeColor(hex: "f95d7")
             case .dark:
-                return UIColor(hex: "1d2021")
+                return BridgeColor(hex: "1d2021")
             }
         }
 
-        public var bg0: UIColor {
+        public var bg0: BridgeColor {
             switch style {
             case .light:
-                return UIColor(hex: "fbf1c7")
+                return BridgeColor(hex: "fbf1c7")
             case .dark:
-                return UIColor(hex: "282828")
-            }
-        }
-        
-        public var bg0_s: UIColor {
-            switch style {
-            case .light:
-                return UIColor(hex: "f2e5bc")
-            case .dark:
-                return UIColor(hex: "32302f")
-            }
-        }
-
-        public var bg1: UIColor {
-            switch style {
-            case .light:
-                return UIColor(hex: "ebdbb2")
-            case .dark:
-                return UIColor(hex: "3c3836")
+                return BridgeColor(hex: "282828")
             }
         }
         
-        public var bg2: UIColor {
+        public var bg0_s: BridgeColor {
             switch style {
             case .light:
-                return UIColor(hex: "d5c4a1")
+                return BridgeColor(hex: "f2e5bc")
             case .dark:
-                return UIColor(hex: "504945")
+                return BridgeColor(hex: "32302f")
             }
         }
 
-        public var bg3: UIColor {
+        public var bg1: BridgeColor {
             switch style {
             case .light:
-                return UIColor(hex: "bdae93")
+                return BridgeColor(hex: "ebdbb2")
             case .dark:
-                return UIColor(hex: "665c54")
+                return BridgeColor(hex: "3c3836")
             }
         }
         
-        public var bg4: UIColor {
+        public var bg2: BridgeColor {
             switch style {
             case .light:
-                return UIColor(hex: "a89984")
+                return BridgeColor(hex: "d5c4a1")
             case .dark:
-                return UIColor(hex: "7c6f64")
+                return BridgeColor(hex: "504945")
             }
         }
 
-        public var darkGray: UIColor {
-            return UIColor(hex: "928374")
-        }
-
-        public var orange: UIColor {
-            return UIColor(hex: "d65d0e")
-        }
-
-        public var fg: UIColor {
+        public var bg3: BridgeColor {
             switch style {
             case .light:
-                return UIColor(hex: "3c3836")
+                return BridgeColor(hex: "bdae93")
             case .dark:
-                return UIColor(hex: "ebdbb2")
+                return BridgeColor(hex: "665c54")
             }
         }
         
-        public var fg0: UIColor {
+        public var bg4: BridgeColor {
             switch style {
             case .light:
-                return UIColor(hex: "282828")
+                return BridgeColor(hex: "a89984")
             case .dark:
-                return UIColor(hex: "fbf1c7")
+                return BridgeColor(hex: "7c6f64")
             }
         }
 
-        public var fg1: UIColor {
+        public var darkGray: BridgeColor {
+            return BridgeColor(hex: "928374")
+        }
+
+        public var orange: BridgeColor {
+            return BridgeColor(hex: "d65d0e")
+        }
+
+        public var fg: BridgeColor {
             switch style {
             case .light:
-                return UIColor(hex: "3c3836")
+                return BridgeColor(hex: "3c3836")
             case .dark:
-                return UIColor(hex: "ebdbb2")
+                return BridgeColor(hex: "ebdbb2")
             }
         }
         
-        public var fg2: UIColor {
+        public var fg0: BridgeColor {
             switch style {
             case .light:
-                return UIColor(hex: "504945")
+                return BridgeColor(hex: "282828")
             case .dark:
-                return UIColor(hex: "d5c4a1")
+                return BridgeColor(hex: "fbf1c7")
             }
         }
 
-        public var fg3: UIColor {
+        public var fg1: BridgeColor {
             switch style {
             case .light:
-                return UIColor(hex: "655c54")
+                return BridgeColor(hex: "3c3836")
             case .dark:
-                return UIColor(hex: "bdae93")
+                return BridgeColor(hex: "ebdbb2")
+            }
+        }
+        
+        public var fg2: BridgeColor {
+            switch style {
+            case .light:
+                return BridgeColor(hex: "504945")
+            case .dark:
+                return BridgeColor(hex: "d5c4a1")
             }
         }
 
-        public var fg4: UIColor {
+        public var fg3: BridgeColor {
             switch style {
             case .light:
-                return UIColor(hex: "7c6f64")
+                return BridgeColor(hex: "655c54")
             case .dark:
-                return UIColor(hex: "a989984")
+                return BridgeColor(hex: "bdae93")
+            }
+        }
+
+        public var fg4: BridgeColor {
+            switch style {
+            case .light:
+                return BridgeColor(hex: "7c6f64")
+            case .dark:
+                return BridgeColor(hex: "a989984")
             }
         }
         

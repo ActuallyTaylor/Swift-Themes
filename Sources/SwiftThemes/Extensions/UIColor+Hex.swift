@@ -1,6 +1,7 @@
-import UIKit
+import Foundation
+import CoreGraphics
 
-extension UIColor {
+extension BridgeColor {
     convenience init(hex: String) {
         var hexSanitized = hex.trimmingCharacters(in: .whitespacesAndNewlines)
         hexSanitized = hexSanitized.replacingOccurrences(of: "#", with: "")

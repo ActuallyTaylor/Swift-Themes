@@ -1,9 +1,8 @@
-import UIKit
 import SwiftUI
 
 @available(iOS 15.0, *)
-public extension UIColor {
+public extension BridgeColor {
     var color: Color {
-        return Color(uiColor: self)
+        return Color(bridgeColor: self)
     }
 }
