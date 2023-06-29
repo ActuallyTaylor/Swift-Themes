@@ -1,6 +1,6 @@
 import Runestone
-import UIKit
 import SwiftUI
+import SwiftThemes
 
 public enum EditorTheme: Int, CaseIterable, Identifiable, Comparable {
     public var id: Int {
