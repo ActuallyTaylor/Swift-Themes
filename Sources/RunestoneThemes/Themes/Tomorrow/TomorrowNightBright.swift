@@ -1,30 +1,29 @@
 import Foundation
 import SwiftThemes
 import Runestone
-import UIKit
 
 class TomorrowNightBright: Theme {
-    let font: UIFont = .monospacedSystemFont(ofSize: 14, weight: .regular)
-    let textColor: UIColor = .tomorrowNightBright.foreground
+    let font: BridgeFont = .monospacedSystemFont(ofSize: 14, weight: .regular)
+    let textColor: BridgeColor = .tomorrowNightBright.foreground
 
-    let gutterBackgroundColor: UIColor = .tomorrowNightBright.background
-    let gutterHairlineColor: UIColor = .tomorrowNightBright.background
+    let gutterBackgroundColor: BridgeColor = .tomorrowNightBright.background
+    let gutterHairlineColor: BridgeColor = .tomorrowNightBright.background
 
-    let lineNumberColor: UIColor = .tomorrowNightBright.comment
-    let lineNumberFont: UIFont = .monospacedSystemFont(ofSize: 14, weight: .regular)
+    let lineNumberColor: BridgeColor = .tomorrowNightBright.comment
+    let lineNumberFont: BridgeFont = .monospacedSystemFont(ofSize: 14, weight: .regular)
 
-    let selectedLineBackgroundColor: UIColor = .tomorrowNightBright.line
-    let selectedLinesLineNumberColor: UIColor = .tomorrowNightBright.foreground
-    let selectedLinesGutterBackgroundColor: UIColor = .tomorrowNightBright.background
+    let selectedLineBackgroundColor: BridgeColor = .tomorrowNightBright.line
+    let selectedLinesLineNumberColor: BridgeColor = .tomorrowNightBright.foreground
+    let selectedLinesGutterBackgroundColor: BridgeColor = .tomorrowNightBright.background
 
-    let invisibleCharactersColor: UIColor = .tomorrowNightBright.comment
+    let invisibleCharactersColor: BridgeColor = .tomorrowNightBright.comment
 
-    let pageGuideHairlineColor: UIColor = .tomorrowNightBright.foreground.withAlphaComponent(0.1)
-    let pageGuideBackgroundColor: UIColor = .tomorrowNightBright.foreground.withAlphaComponent(0.2)
+    let pageGuideHairlineColor: BridgeColor = .tomorrowNightBright.foreground.withAlphaComponent(0.1)
+    let pageGuideBackgroundColor: BridgeColor = .tomorrowNightBright.foreground.withAlphaComponent(0.2)
 
-    let markedTextBackgroundColor: UIColor = .tomorrowNightBright.foreground.withAlphaComponent(0.2)
+    let markedTextBackgroundColor: BridgeColor = .tomorrowNightBright.foreground.withAlphaComponent(0.2)
 
-    func textColor(for highlightName: String) -> UIColor? {
+    func textColor(for highlightName: String) -> BridgeColor? {
         guard let highlightName = HighlightName(highlightName) else {
             return nil
         }
