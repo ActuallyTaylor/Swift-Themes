@@ -1,29 +1,28 @@
 import SwiftThemes
 import Runestone
-import UIKit
 
 class CatppuccinFrappe: Theme {
-    let font: UIFont = .monospacedSystemFont(ofSize: 14, weight: .regular)
-    let textColor: UIColor = .catppuccinFrappe.text
+    let font: BridgeFont = .monospacedSystemFont(ofSize: 14, weight: .regular)
+    let textColor: BridgeColor = .catppuccinFrappe.text
 
-    let gutterBackgroundColor: UIColor = .catppuccinFrappe.base
-    let gutterHairlineColor: UIColor = .catppuccinFrappe.mantle
+    let gutterBackgroundColor: BridgeColor = .catppuccinFrappe.base
+    let gutterHairlineColor: BridgeColor = .catppuccinFrappe.mantle
 
-    let lineNumberColor: UIColor = .catppuccinFrappe.overlay1
-    let lineNumberFont: UIFont = .monospacedSystemFont(ofSize: 14, weight: .regular)
+    let lineNumberColor: BridgeColor = .catppuccinFrappe.overlay1
+    let lineNumberFont: BridgeFont = .monospacedSystemFont(ofSize: 14, weight: .regular)
 
-    let selectedLineBackgroundColor: UIColor = .catppuccinFrappe.surface2.withAlphaComponent(0.5)
-    let selectedLinesLineNumberColor: UIColor = .catppuccinFrappe.text
-    let selectedLinesGutterBackgroundColor: UIColor = .catppuccinFrappe.mantle
+    let selectedLineBackgroundColor: BridgeColor = .catppuccinFrappe.surface2.withAlphaComponent(0.5)
+    let selectedLinesLineNumberColor: BridgeColor = .catppuccinFrappe.text
+    let selectedLinesGutterBackgroundColor: BridgeColor = .catppuccinFrappe.mantle
 
-    let invisibleCharactersColor: UIColor = .catppuccinFrappe.overlay0
+    let invisibleCharactersColor: BridgeColor = .catppuccinFrappe.overlay0
 
-    let pageGuideHairlineColor: UIColor = .catppuccinFrappe.text.withAlphaComponent(0.1)
-    let pageGuideBackgroundColor: UIColor = .catppuccinFrappe.text.withAlphaComponent(0.2)
+    let pageGuideHairlineColor: BridgeColor = .catppuccinFrappe.text.withAlphaComponent(0.1)
+    let pageGuideBackgroundColor: BridgeColor = .catppuccinFrappe.text.withAlphaComponent(0.2)
 
-    let markedTextBackgroundColor: UIColor = .catppuccinFrappe.text.withAlphaComponent(0.2)
+    let markedTextBackgroundColor: BridgeColor = .catppuccinFrappe.text.withAlphaComponent(0.2)
 
-    func textColor(for highlightName: String) -> UIColor? {
+    func textColor(for highlightName: String) -> BridgeColor? {
         guard let highlightName = HighlightName(highlightName) else {
             return nil
         }

@@ -1,29 +1,28 @@
 import SwiftThemes
 import Runestone
-import UIKit
 
 class CatppuccinMacchiato: Theme {
-    let font: UIFont = .monospacedSystemFont(ofSize: 14, weight: .regular)
-    let textColor: UIColor = .catppuccinMacchiato.text
+    let font: BridgeFont = .monospacedSystemFont(ofSize: 14, weight: .regular)
+    let textColor: BridgeColor = .catppuccinMacchiato.text
 
-    let gutterBackgroundColor: UIColor = .catppuccinMacchiato.base
-    let gutterHairlineColor: UIColor = .catppuccinMacchiato.mantle
+    let gutterBackgroundColor: BridgeColor = .catppuccinMacchiato.base
+    let gutterHairlineColor: BridgeColor = .catppuccinMacchiato.mantle
 
-    let lineNumberColor: UIColor = .catppuccinMacchiato.overlay1
-    let lineNumberFont: UIFont = .monospacedSystemFont(ofSize: 14, weight: .regular)
+    let lineNumberColor: BridgeColor = .catppuccinMacchiato.overlay1
+    let lineNumberFont: BridgeFont = .monospacedSystemFont(ofSize: 14, weight: .regular)
 
-    let selectedLineBackgroundColor: UIColor = .catppuccinMacchiato.surface2.withAlphaComponent(0.5)
-    let selectedLinesLineNumberColor: UIColor = .catppuccinMacchiato.text
-    let selectedLinesGutterBackgroundColor: UIColor = .catppuccinMacchiato.mantle
+    let selectedLineBackgroundColor: BridgeColor = .catppuccinMacchiato.surface2.withAlphaComponent(0.5)
+    let selectedLinesLineNumberColor: BridgeColor = .catppuccinMacchiato.text
+    let selectedLinesGutterBackgroundColor: BridgeColor = .catppuccinMacchiato.mantle
 
-    let invisibleCharactersColor: UIColor = .catppuccinMacchiato.overlay0
+    let invisibleCharactersColor: BridgeColor = .catppuccinMacchiato.overlay0
 
-    let pageGuideHairlineColor: UIColor = .catppuccinMacchiato.text.withAlphaComponent(0.1)
-    let pageGuideBackgroundColor: UIColor = .catppuccinMacchiato.text.withAlphaComponent(0.2)
+    let pageGuideHairlineColor: BridgeColor = .catppuccinMacchiato.text.withAlphaComponent(0.1)
+    let pageGuideBackgroundColor: BridgeColor = .catppuccinMacchiato.text.withAlphaComponent(0.2)
 
-    let markedTextBackgroundColor: UIColor = .catppuccinMacchiato.text.withAlphaComponent(0.2)
+    let markedTextBackgroundColor: BridgeColor = .catppuccinMacchiato.text.withAlphaComponent(0.2)
 
-    func textColor(for highlightName: String) -> UIColor? {
+    func textColor(for highlightName: String) -> BridgeColor? {
         guard let highlightName = HighlightName(highlightName) else {
             return nil
         }

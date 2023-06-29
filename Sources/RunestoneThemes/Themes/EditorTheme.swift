@@ -22,7 +22,7 @@ public enum EditorTheme: Int, CaseIterable, Identifiable, Comparable {
     case solarizedLight
     case solarizedDark
     
-    public var backgroundColor: UIColor {
+    public var backgroundColor: BridgeColor {
         switch self {
         case .tomorrow:
             return .tomorrow.background
@@ -53,7 +53,7 @@ public enum EditorTheme: Int, CaseIterable, Identifiable, Comparable {
         }
     }
     
-    public var foregroundColor: UIColor {
+    public var foregroundColor: BridgeColor {
         switch self {
         case .tomorrow:
             return .tomorrow.foreground
@@ -178,7 +178,7 @@ public enum EditorTheme: Int, CaseIterable, Identifiable, Comparable {
         }
     }
     
-    public var tintColor: UIColor {
+    public var tintColor: BridgeColor {
         switch self {
         case .tomorrow:
             return .tomorrow.red

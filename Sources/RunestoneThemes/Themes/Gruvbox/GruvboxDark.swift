@@ -1,29 +1,28 @@
 import SwiftThemes
 import Runestone
-import UIKit
 
 class GruvboxDark: Theme {
-    let font: UIFont = .monospacedSystemFont(ofSize: 14, weight: .regular)
-    let textColor: UIColor = .gruvboxDark.fg
+    let font: BridgeFont = .monospacedSystemFont(ofSize: 14, weight: .regular)
+    let textColor: BridgeColor = .gruvboxDark.fg
 
-    let gutterBackgroundColor: UIColor = .gruvboxDark.bg
-    let gutterHairlineColor: UIColor = .gruvboxDark.bg1
+    let gutterBackgroundColor: BridgeColor = .gruvboxDark.bg
+    let gutterHairlineColor: BridgeColor = .gruvboxDark.bg1
 
-    let lineNumberColor: UIColor = .gruvboxDark.bg3
-    let lineNumberFont: UIFont = .monospacedSystemFont(ofSize: 14, weight: .regular)
+    let lineNumberColor: BridgeColor = .gruvboxDark.bg3
+    let lineNumberFont: BridgeFont = .monospacedSystemFont(ofSize: 14, weight: .regular)
 
-    let selectedLineBackgroundColor: UIColor = .gruvboxDark.aqua.withAlphaComponent(0.64)
-    let selectedLinesLineNumberColor: UIColor = .gruvboxDark.fg
-    let selectedLinesGutterBackgroundColor: UIColor = .gruvboxDark.bg1
+    let selectedLineBackgroundColor: BridgeColor = .gruvboxDark.aqua.withAlphaComponent(0.64)
+    let selectedLinesLineNumberColor: BridgeColor = .gruvboxDark.fg
+    let selectedLinesGutterBackgroundColor: BridgeColor = .gruvboxDark.bg1
 
-    let invisibleCharactersColor: UIColor = .gruvboxDark.darkGray
+    let invisibleCharactersColor: BridgeColor = .gruvboxDark.darkGray
 
-    let pageGuideHairlineColor: UIColor = .gruvboxDark.fg.withAlphaComponent(0.1)
-    let pageGuideBackgroundColor: UIColor = .gruvboxDark.fg.withAlphaComponent(0.2)
+    let pageGuideHairlineColor: BridgeColor = .gruvboxDark.fg.withAlphaComponent(0.1)
+    let pageGuideBackgroundColor: BridgeColor = .gruvboxDark.fg.withAlphaComponent(0.2)
 
-    let markedTextBackgroundColor: UIColor = .gruvboxDark.fg.withAlphaComponent(0.2)
+    let markedTextBackgroundColor: BridgeColor = .gruvboxDark.fg.withAlphaComponent(0.2)
 
-    func textColor(for highlightName: String) -> UIColor? {
+    func textColor(for highlightName: String) -> BridgeColor? {
         guard let highlightName = HighlightName(highlightName) else {
             return nil
         }

@@ -1,29 +1,28 @@
 import SwiftThemes
 import Runestone
-import UIKit
 
 class SolarizedDark: Theme {
-    let font: UIFont = .monospacedSystemFont(ofSize: 14, weight: .regular)
-    let textColor: UIColor = .solarizedDark.foreground
+    let font: BridgeFont = .monospacedSystemFont(ofSize: 14, weight: .regular)
+    let textColor: BridgeColor = .solarizedDark.foreground
 
-    let gutterBackgroundColor: UIColor = .solarizedDark.background
-    let gutterHairlineColor: UIColor = .solarizedDark.backgroundHighlights
+    let gutterBackgroundColor: BridgeColor = .solarizedDark.background
+    let gutterHairlineColor: BridgeColor = .solarizedDark.backgroundHighlights
 
-    let lineNumberColor: UIColor = .solarizedDark.comment
-    let lineNumberFont: UIFont = .monospacedSystemFont(ofSize: 14, weight: .regular)
+    let lineNumberColor: BridgeColor = .solarizedDark.comment
+    let lineNumberFont: BridgeFont = .monospacedSystemFont(ofSize: 14, weight: .regular)
 
-    let selectedLineBackgroundColor: UIColor = .solarizedDark.backgroundHighlights
-    let selectedLinesLineNumberColor: UIColor = .solarizedDark.foreground
-    let selectedLinesGutterBackgroundColor: UIColor = .solarizedDark.backgroundHighlights
+    let selectedLineBackgroundColor: BridgeColor = .solarizedDark.backgroundHighlights
+    let selectedLinesLineNumberColor: BridgeColor = .solarizedDark.foreground
+    let selectedLinesGutterBackgroundColor: BridgeColor = .solarizedDark.backgroundHighlights
 
-    let invisibleCharactersColor: UIColor = .solarizedDark.comment
+    let invisibleCharactersColor: BridgeColor = .solarizedDark.comment
 
-    let pageGuideHairlineColor: UIColor = .solarizedDark.foreground.withAlphaComponent(0.1)
-    let pageGuideBackgroundColor: UIColor = .solarizedDark.foreground.withAlphaComponent(0.2)
+    let pageGuideHairlineColor: BridgeColor = .solarizedDark.foreground.withAlphaComponent(0.1)
+    let pageGuideBackgroundColor: BridgeColor = .solarizedDark.foreground.withAlphaComponent(0.2)
 
-    let markedTextBackgroundColor: UIColor = .solarizedDark.foreground.withAlphaComponent(0.2)
+    let markedTextBackgroundColor: BridgeColor = .solarizedDark.foreground.withAlphaComponent(0.2)
 
-    func textColor(for highlightName: String) -> UIColor? {
+    func textColor(for highlightName: String) -> BridgeColor? {
         guard let highlightName = HighlightName(highlightName) else {
             return nil
         }

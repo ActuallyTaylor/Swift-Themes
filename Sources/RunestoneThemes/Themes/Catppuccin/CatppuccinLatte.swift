@@ -1,29 +1,28 @@
 import SwiftThemes
 import Runestone
-import UIKit
 
 class CatppuccinLatte: Theme {
-    let font: UIFont = .monospacedSystemFont(ofSize: 14, weight: .regular)
-    let textColor: UIColor = .catppuccinLatte.text
+    let font: BridgeFont = .monospacedSystemFont(ofSize: 14, weight: .regular)
+    let textColor: BridgeColor = .catppuccinLatte.text
 
-    let gutterBackgroundColor: UIColor = .catppuccinLatte.base
-    let gutterHairlineColor: UIColor = .catppuccinLatte.mantle
+    let gutterBackgroundColor: BridgeColor = .catppuccinLatte.base
+    let gutterHairlineColor: BridgeColor = .catppuccinLatte.mantle
 
-    let lineNumberColor: UIColor = .catppuccinLatte.overlay1
-    let lineNumberFont: UIFont = .monospacedSystemFont(ofSize: 14, weight: .regular)
+    let lineNumberColor: BridgeColor = .catppuccinLatte.overlay1
+    let lineNumberFont: BridgeFont = .monospacedSystemFont(ofSize: 14, weight: .regular)
 
-    let selectedLineBackgroundColor: UIColor = .catppuccinLatte.surface2.withAlphaComponent(0.5)
-    let selectedLinesLineNumberColor: UIColor = .catppuccinLatte.text
-    let selectedLinesGutterBackgroundColor: UIColor = .catppuccinLatte.mantle
+    let selectedLineBackgroundColor: BridgeColor = .catppuccinLatte.surface2.withAlphaComponent(0.5)
+    let selectedLinesLineNumberColor: BridgeColor = .catppuccinLatte.text
+    let selectedLinesGutterBackgroundColor: BridgeColor = .catppuccinLatte.mantle
 
-    let invisibleCharactersColor: UIColor = .catppuccinLatte.overlay0
+    let invisibleCharactersColor: BridgeColor = .catppuccinLatte.overlay0
 
-    let pageGuideHairlineColor: UIColor = .catppuccinLatte.text.withAlphaComponent(0.1)
-    let pageGuideBackgroundColor: UIColor = .catppuccinLatte.text.withAlphaComponent(0.2)
+    let pageGuideHairlineColor: BridgeColor = .catppuccinLatte.text.withAlphaComponent(0.1)
+    let pageGuideBackgroundColor: BridgeColor = .catppuccinLatte.text.withAlphaComponent(0.2)
 
-    let markedTextBackgroundColor: UIColor = .catppuccinLatte.text.withAlphaComponent(0.2)
+    let markedTextBackgroundColor: BridgeColor = .catppuccinLatte.text.withAlphaComponent(0.2)
 
-    func textColor(for highlightName: String) -> UIColor? {
+    func textColor(for highlightName: String) -> BridgeColor? {
         guard let highlightName = HighlightName(highlightName) else {
             return nil
         }
