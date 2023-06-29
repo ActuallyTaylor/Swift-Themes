@@ -1,6 +1,7 @@
 import SwiftThemes
 import Runestone
 
+/// <#Description#>
 class CatppuccinFrappe: Theme {
     let font: BridgeFont = .monospacedSystemFont(ofSize: 14, weight: .regular)
     let textColor: BridgeColor = .catppuccinFrappe.text

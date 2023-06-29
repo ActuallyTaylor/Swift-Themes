@@ -1,6 +1,6 @@
 import SwiftUI
 
-extension Color {
+public extension Color {
     init(bridgeColor: BridgeColor) {
         #if canImport(UIKit)
         self = Color(uiColor: bridgeColor)
