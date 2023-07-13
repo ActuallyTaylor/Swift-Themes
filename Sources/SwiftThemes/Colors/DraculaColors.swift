@@ -1,3 +1,9 @@
+#if canImport(UIKit)
+import UIKit
+#elseif canImport(AppKit)
+import AppKit
+#endif
+
 /// Derived from https://github.com/catppuccin/catppuccin
 
 public extension BridgeColor {
