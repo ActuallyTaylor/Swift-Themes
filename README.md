@@ -6,14 +6,14 @@ It will then include other sub-targets such as `RunestoneThemes` that provide th
 The eventual goal for this repository is to build ontop of it a drop-in theme engine for iOS and macOS apps.
 
 ## Currently Supported Themes
-1. Tomorrow
-2. Catppuccin Latte
-3. Catppuccin Frappé
-4. Catppuccin Macchiato
-5. Catppuccin Mocha
-6. Solarized Light
-7. Solarized Dark
-8. Tomorrow Night
-9. Tomorrow Night Eighties
-10. Tomorrow Night Bright
-11. Tomorrow Night Blue
+1. [Catppuccin Latte](https://github.com/catppuccin/catppuccin)
+2. [Catppuccin Frappé](https://github.com/catppuccin/catppuccin)
+3. [Catppuccin Macchiato](https://github.com/catppuccin/catppuccin)
+4. [Catppuccin Mocha](https://github.com/catppuccin/catppuccin)
+5. [Solarized Light](https://ethanschoonover.com/solarized/)
+6. [Solarized Dark](https://ethanschoonover.com/solarized/)
+7. [Tomorrow](https://github.com/chriskempson/tomorrow-theme)
+8. [Tomorrow Night](https://github.com/chriskempson/tomorrow-theme)
+9. [Tomorrow Night Eighties](https://github.com/chriskempson/tomorrow-theme)
+10. [Tomorrow Night Bright](https://github.com/chriskempson/tomorrow-theme)
+11. [Tomorrow Night Blue](https://github.com/chriskempson/tomorrow-theme)
